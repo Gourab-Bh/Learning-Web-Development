@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Images</title>
+    <h2><a href="index.html">HOME</a></h2>
+    <center><em><strong>
+                <h1>Images</h1>
+            </strong></em></center>
+
+</head>
+
+<body>
+
+    <!-- Images -->
+    <strong>Static Image :</strong><br>
+    <img src="https://media.istockphoto.com/id/1322277517/photo/wild-grass-in-the-mountains-at-sunset.jpg?s=612x612&w=0&k=20&c=6mItwwFFGqKNKEAzv0mv6TaxhLN3zSE43bWmFN--J5w="
+        alt="a football" width="100" height="100">
+    <br>
+
+
+
+    <strong>Dynamic Image :</strong><br>
+    <img src="cricket.jpg" alt="a football" width="11%" height="11%">
+    <hr>
+
+
+
+    <strong>Change with orientation to portrait :</strong><br>
+    <picture>
+        <source
+            srcset="https://media.istockphoto.com/id/1322277517/photo/wild-grass-in-the-mountains-at-sunset.jpg?s=612x612&w=0&k=20&c=6mItwwFFGqKNKEAzv0mv6TaxhLN3zSE43bWmFN--J5w="
+            media="(orientation: portrait)">
+        <img src="cricket.jpg" alt="Right Image">
+    </picture>
+
+    <hr>
+
+
+
+    <strong>Change with width (<600px):</strong><br>
+            <!-- Picture by size -->
+            <picture>
+                <source
+                    srcset="https://media.istockphoto.com/id/1322277517/photo/wild-grass-in-the-mountains-at-sunset.jpg?s=612x612&w=0&k=20&c=6mItwwFFGqKNKEAzv0mv6TaxhLN3zSE43bWmFN--J5w="
+                    media="(min-width: 600px)" />
+                <img src="cricket.jpg" alt="image by size" />
+            </picture>
+
+            <hr>
+
+
+
+            <!-- Picture by type -->
+            <!-- <picture>
+  <source srcset="photo.avif" type="image/avif" />
+  <source srcset="photo.webp" type="image/webp" />
+  <img src="photo.jpg" alt="photo" />
+</picture> -->
+
+            <hr>
+
+
+</body>
+
+</html>
